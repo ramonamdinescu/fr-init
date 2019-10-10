@@ -48,3 +48,6 @@
         "soTimeout": "10 seconds"
       }
     }
+  ],
+  "monitor": true
+}
