@@ -1,5 +1,4 @@
-[2:17 PM] Cristian Coman
-    {
+{
   "handler": {
     "name": "_router",
     "type": "Router",
@@ -48,4 +47,3 @@
         "numberOfWorkers": 4,
         "soTimeout": "10 seconds"
       }
- 
