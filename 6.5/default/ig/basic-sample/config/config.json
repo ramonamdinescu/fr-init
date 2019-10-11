@@ -47,3 +47,7 @@
         "numberOfWorkers": 4,
         "soTimeout": "10 seconds"
       }
+    }
+  ],
+  "monitor": true
+}
