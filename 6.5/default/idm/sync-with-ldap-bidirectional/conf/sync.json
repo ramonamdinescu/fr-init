@@ -23,7 +23,12 @@
                 },
                 {
                     "source" : "telephoneNumber",
-                    "target" : "telephoneNumber"
+                    "target" : "telephoneNumber",
+                    "condition" : {
+                        "type" : "text/javascript",
+                        "globals" : { },
+                        "source" : "!!object.telephoneNumber"
+                    }
                 },
                 {
                     "source" : "sn",
@@ -32,10 +37,6 @@
                 {
                     "source" : "uid",
                     "target" : "userName"
-                },
-                {
-                    "source" : "inetuserstatus",
-                    "target" : "accountStatus"
                 }
             ],
             "policies" : [
@@ -80,8 +81,7 @@
             "links" : "systemLdapAccounts_managedUser",
             "onCreate" : {
                 "type" : "text/javascript",
-                "globals" : { },
-                "source" : "target.dn = 'uid=' + source.userName + ',ou=people,&{userstore.basecontext}';"
+                "source" : "target.dn = 'uid=' + source.userName + ',ou=People,dc=openam,dc=forgerock,dc=org';"
             },
             "properties" : [
                 {
@@ -139,56 +139,36 @@
             ],
             "policies" : [
                 {
-                    "action" : "IGNORE",
-                    "situation" : "AMBIGUOUS"
+                    "situation" : "CONFIRMED",
+                    "action" : "UPDATE"
                 },
                 {
-                    "action" : "DELETE",
-                    "situation" : "SOURCE_MISSING"
+                    "situation" : "FOUND",
+                    "action" : "LINK"
                 },
                 {
-                    "action" : "CREATE",
-                    "situation" : "MISSING"
+                    "situation" : "ABSENT",
+                    "action" : "CREATE"
                 },
                 {
-                    "action" : "EXCEPTION",
-                    "situation" : "FOUND_ALREADY_LINKED"
+                    "situation" : "AMBIGUOUS",
+                    "action" : "IGNORE"
                 },
                 {
-                    "action" : "IGNORE",
-                    "situation" : "UNQUALIFIED"
+                    "situation" : "MISSING",
+                    "action" : "IGNORE"
                 },
                 {
-                    "action" : "IGNORE",
-                    "situation" : "UNASSIGNED"
+                    "situation" : "SOURCE_MISSING",
+                    "action" : "DELETE"
                 },
                 {
-                    "action" : "EXCEPTION",
-                    "situation" : "LINK_ONLY"
+                    "situation" : "UNQUALIFIED",
+                    "action" : "IGNORE"
                 },
                 {
-                    "action" : "IGNORE",
-                    "situation" : "TARGET_IGNORED"
-                },
-                {
-                    "action" : "IGNORE",
-                    "situation" : "SOURCE_IGNORED"
-                },
-                {
-                    "action" : "IGNORE",
-                    "situation" : "ALL_GONE"
-                },
-                {
-                    "action" : "UPDATE",
-                    "situation" : "CONFIRMED"
-                },
-                {
-                    "action" : "LINK",
-                    "situation" : "FOUND"
-                },
-                {
-                    "action" : "CREATE",
-                    "situation" : "ABSENT"
+                    "situation" : "UNASSIGNED",
+                    "action" : "IGNORE"
                 }
             ]
         }
