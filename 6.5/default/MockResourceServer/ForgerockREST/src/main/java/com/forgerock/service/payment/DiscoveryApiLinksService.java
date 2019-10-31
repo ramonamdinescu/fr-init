@@ -97,11 +97,11 @@ public class DiscoveryApiLinksService {
 
 
 		OBDiscoveryAPILinksPayment4 apiLinksPayment4 = new OBDiscoveryAPILinksPayment4();
-		apiLinksPayment4.setCreateDomesticPaymentConsent("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/domestic-payment-consents");
-		apiLinksPayment4.getDomesticPaymentConsent("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/domestic-payment-consents/{ConsentId}");
-		apiLinksPayment4.setGetDomesticPaymentConsentsConsentIdFundsConfirmation("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/domestic-payment-consents/{ConsentId}/funds-confirmation");
-		apiLinksPayment4.createDomesticPayment("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/domestic-payments");
-		apiLinksPayment4.getDomesticPayment("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/domestic-payments/{DomesticPaymentId}");
+		apiLinksPayment4.setCreateDomesticPaymentConsent("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/domestic-payment-consents");
+		apiLinksPayment4.getDomesticPaymentConsent("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/domestic-payment-consents/{ConsentId}");
+		apiLinksPayment4.setGetDomesticPaymentConsentsConsentIdFundsConfirmation("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/domestic-payment-consents/{ConsentId}/funds-confirmation");
+		apiLinksPayment4.createDomesticPayment("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/domestic-payments");
+		apiLinksPayment4.getDomesticPayment("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/domestic-payments/{DomesticPaymentId}");
 		
 		List<PaymentInitiationAPI> paymentInitiationAPIList = new ArrayList<>();
 		PaymentInitiationAPI paymentInitiationAPI = new PaymentInitiationAPI();
@@ -112,12 +112,12 @@ public class DiscoveryApiLinksService {
 		
 
 		OBDiscoveryAPILinksAccount3 apiLinksAccount = new OBDiscoveryAPILinksAccount3();
-		apiLinksAccount.setCreateAccountAccessConsent("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/account-access-consents");
-		apiLinksAccount.setGetAccountAccessConsent("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/account-access-consents/{ConsentId}");
-		apiLinksAccount.setGetAccounts("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/accounts");
-		apiLinksAccount.setGetAccount("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/accounts/{AccountId}");
-		apiLinksAccount.setGetAccountTransactions("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/accounts/{AccountId}/transactions");
-		apiLinksAccount.setGetAccountBalances("https://openig.psd2acceldemo.fridam.aeet-forgerock.com/openbanking/v3.1/accounts/{AccountId}/balances");
+		apiLinksAccount.setCreateAccountAccessConsent("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/account-access-consents");
+		apiLinksAccount.setGetAccountAccessConsent("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/account-access-consents/{ConsentId}");
+		apiLinksAccount.setGetAccounts("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/accounts");
+		apiLinksAccount.setGetAccount("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/accounts/{AccountId}");
+		apiLinksAccount.setGetAccountTransactions("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/accounts/{AccountId}/transactions");
+		apiLinksAccount.setGetAccountBalances("https://openig.iss-forgerock.iss.eu/openbanking/v3.1/accounts/{AccountId}/balances");
 		
 		List<AccountAndTransactionAPI> accountAndTransactionAPIList = new ArrayList<>();
 		AccountAndTransactionAPI accountAndTransactionAPI = new AccountAndTransactionAPI();

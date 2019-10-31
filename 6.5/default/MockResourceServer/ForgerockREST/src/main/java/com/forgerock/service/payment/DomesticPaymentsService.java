@@ -48,7 +48,7 @@ public class DomesticPaymentsService {
 	private Links links;
 	private Meta meta;
 	private OBRisk1 risk;
-	final static private String HOST_URL="https://openig.psd2acceldemo.fridam.aeet-forgerock.com:443/openbanking/v3.1";
+	final static private String HOST_URL="https://openig.iss-forgerock.iss.eu:443/openbanking/v3.1";
 
 	private static DomesticPaymentsService stdregd = null;
 

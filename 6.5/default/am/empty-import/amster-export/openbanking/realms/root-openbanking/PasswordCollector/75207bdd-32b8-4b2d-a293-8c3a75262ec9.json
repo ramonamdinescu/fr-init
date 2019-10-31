@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "PasswordCollector",
     "entityId" : "75207bdd-32b8-4b2d-a293-8c3a75262ec9",
     "pathParams" : { }

@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "DataStoreDecision",
     "entityId" : "f268831d-bc39-4ac7-be77-78e78b092a03",
     "pathParams" : { }

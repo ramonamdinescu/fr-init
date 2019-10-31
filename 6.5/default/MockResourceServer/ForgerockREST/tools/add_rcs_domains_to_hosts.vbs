@@ -5,7 +5,7 @@ If Not WScript.Arguments.Named.Exists("elevate") Then
 End If
 
 IPAddress = "35.204.122.163"
-HostFileRecord = IPAddress & " obie-rcs-mocks.psd2acceldemo.fridam.aeet-forgerock.com"
+HostFileRecord = IPAddress & " obie-rcs-mocks.iss-forgerock.iss.eu"
 
 Const ForReading = 1, ForWriting = 2, ForAppending = 8, ReadOnly = 1
 Set fso = CreateObject("Scripting.FileSystemObject")

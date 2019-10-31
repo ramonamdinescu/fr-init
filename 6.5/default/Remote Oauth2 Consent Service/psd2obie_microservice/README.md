@@ -48,13 +48,13 @@ For some configuration you can change file for project at path:
 
 ### Application for test environment	"application-test.yml"
 * rsc-remote-host    
-    - **am: https://login.psd2acceldemo.fridam.aeet-forgerock.com**  -  this will point to AM application, it’s using to get JWK’s from URI. Note should use format protocol://address:{port}/openam
-    - **idm: https://openidm.psd2acceldemo.fridam.aeet-forgerock.com** - this will point to IDM application, it’s using to get/update Consent ID or payment Intent
+    - **am: http://openam**  -  this will point to AM application, it’s using to get JWK’s from URI. Note should use format protocol://address:{port}/openam
+    - **idm: https://openidm.iss-forgerock.iss.eu** - this will point to IDM application, it’s using to get/update Consent ID or payment Intent
 
 * application
     - **idm-header-username: admin** - This property will use in the header to access IDM resource at POST retrieve/update
     - **idm-header-password: admin** - This property will use in the header to access IDM resource at POST retrieve/update
-    - **accounts-endpoint: http://obie-rcs-mocks.psd2acceldemo.svc.cluster.local:8089/accounts/** - Use for retrieve Account information from core banking, using OBIE spec format.
+    - **accounts-endpoint: http://obie-rcs-mocks.iss-forgerock.svc.cluster.local:8089/accounts/** - Use for retrieve Account information from core banking, using OBIE spec format.
 	
 ### Deploy & Run
 
@@ -79,10 +79,10 @@ For some configuration you can change file for project at path:
 	```cd /path_to_war_location/OBIE_Asset && nohup ./psd-2-rsc-sevice-0.0.1-SNAPSHOT.war &```
 
 * Access and copy all from this page **{ENV}/api/rcs/consent/jwk_pub**
-	- Eg. https://obie-rcs-backend.psd2acceldemo.fridam.aeet-forgerock.com/api/rcs/consent/jwk_pub
+	- Eg. https://obie-rcs-backend.iss-forgerock.iss.eu/api/rcs/consent/jwk_pub
 
 * Access openAM **{ENV}/XUI/#realms/%2Fopenbanking/applications-agents-remoteConsent/agents/edit/forgerock-rcs**
- 	 - Eg. https://login.psd2acceldemo.fridam.aeet-forgerock.com/XUI/#realms/%2Fopenbanking/applications-agents-remoteConsent/agents/edit/forgerock-rcs
+ 	 - Eg. http://openam/XUI/#realms/%2Fopenbanking/applications-agents-remoteConsent/agents/edit/forgerock-rcs
 * Or navigate to
 	 - OpenAm (login with admin) -> realms (openbanking) - > Applications -> Agents -> Remote Consent -> agents 
 	 - In  Public key selector  : JWKs (should be value)
@@ -90,7 +90,7 @@ For some configuration you can change file for project at path:
 	 - Save.
 * Or you could use uri where AM is reading key from specific url.
 	 - In  Public key selector : JWKs_URI
-	 - Json Web Key URI : https://obie-rcs-backend.psd2acceldemo.fridam.aeet-forgerock.com/api/rcs/consent/jwk_pub
+	 - Json Web Key URI : https://obie-rcs-backend.iss-forgerock.iss.eu/api/rcs/consent/jwk_pub
 	 - Save and restart the AM application to use new keys from remote jwk uri.
 
 #### Docker	script example
@@ -119,8 +119,8 @@ sudo kubectl apply -f obie-rcs-backend-deployment.yaml
 For some configuration you can change file for project at path:
 */psd2-obie-frontend/.env.cloud*
 
-**REACT_APP_API_URL=https://obie-rcs-frontend.psd2acceldemo.fridam.aeet-forgerock.com** - URL to request microservice
-**HOST=https://obie-rcs-frontend.psd2acceldemo.fridam.aeet-forgerock.com** - URL to request microservice
+**REACT_APP_API_URL=https://obie-rcs-frontend.iss-forgerock.iss.eu** - URL to request microservice
+**HOST=https://obie-rcs-frontend.iss-forgerock.iss.eu** - URL to request microservice
 
 
 ### Deploy & Run

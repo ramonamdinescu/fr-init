@@ -126,13 +126,13 @@ jhipster:
 # ===================================================================
 
 rsc-remote-host:    
-    am: https://login.psd2acceldemo.fridam.aeet-forgerock.com    
-    idm: https://openidm.psd2acceldemo.fridam.aeet-forgerock.com
+    am: http://openam    
+    idm: https://openidm.iss-forgerock.iss.eu
 
 application:
     am-username: demo
     am-password: Passw0rd
     idm-header-username: openidm-admin
     idm-header-password: openidm-admin
-    accounts-endpoint: http://obie-rcs-mocks.psd2acceldemo.svc.cluster.local:8089/accounts/
+    accounts-endpoint: http://obie-rcs-mocks.iss-forgerock.svc.cluster.local:8089/accounts/
     

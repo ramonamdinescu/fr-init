@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "OpenDJ",
     "entityId" : "OpenDJ",
     "pathParams" : { }
@@ -42,13 +42,14 @@
       "sun-idrepo-ldapv3-config-max-result" : 1000,
       "sun-idrepo-ldapv3-config-search-scope" : "SCOPE_SUB",
       "sun-idrepo-ldapv3-config-time-limit" : 10,
+      "sun-idrepo-ldapv3-config-connection_pool_min_size" : 1,
       "openam-idrepo-ldapv3-heartbeat-interval" : 10,
       "sun-idrepo-ldapv3-config-ldap-server" : [ "configstore-0.configstore:1389" ],
       "openam-idrepo-ldapv3-heartbeat-timeunit" : "SECONDS",
       "sun-idrepo-ldapv3-config-organization_name" : "ou=identities",
       "sun-idrepo-ldapv3-config-connection-mode" : "LDAP",
       "sun-idrepo-ldapv3-config-authpw" : null,
-      "sun-idrepo-ldapv3-config-authpw-encrypted" : "AAAAA0FFUwIQ8nQsFFgmHOuq78VMyn32GxnmF4lnsM8N/0O789Vqkr6Pu3t10r3Qgg=="
+      "sun-idrepo-ldapv3-config-authpw-encrypted" : "AAAAA0FFUwIQg6R90m8ffULuKOU50QyEf1cbVp6MyTZDMjTjKBSgMg9T1CsQAMapGw=="
     },
     "cachecontrol" : {
       "sun-idrepo-ldapv3-dncache-enabled" : true,

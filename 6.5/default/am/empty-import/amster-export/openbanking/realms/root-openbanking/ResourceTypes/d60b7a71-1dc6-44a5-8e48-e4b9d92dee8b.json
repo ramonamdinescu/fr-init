@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "ResourceTypes",
     "entityId" : "d60b7a71-1dc6-44a5-8e48-e4b9d92dee8b",
     "pathParams" : { }
@@ -16,8 +16,8 @@
       "GRANT" : true
     },
     "createdBy" : "id=dsameuser,ou=user,ou=am-config",
-    "creationDate" : 1554886581982,
-    "lastModifiedBy" : "id=dsameuser,ou=user,ou=am-config",
-    "lastModifiedDate" : 1554886581982
+    "creationDate" : 1572423542351,
+    "lastModifiedBy" : "id=amadmin,ou=user,ou=am-config",
+    "lastModifiedDate" : 1572423556994
   }
 }

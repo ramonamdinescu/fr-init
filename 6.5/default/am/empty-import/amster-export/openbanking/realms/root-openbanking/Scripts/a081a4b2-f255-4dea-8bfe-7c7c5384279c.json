@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "Scripts",
     "entityId" : "a081a4b2-f255-4dea-8bfe-7c7c5384279c",
     "pathParams" : { }

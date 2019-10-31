@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "OAuth2Clients",
     "entityId" : "12832c13-7bc5-4fe8-8e16-a5ad77c62ca2",
     "pathParams" : { }
@@ -10,45 +10,70 @@
     "_id" : "12832c13-7bc5-4fe8-8e16-a5ad77c62ca2",
     "signEncOAuth2ClientConfig" : {
       "idTokenEncryptionMethod" : "A128CBC-HS256",
+      "jwkSet" : null,
       "idTokenEncryptionAlgorithm" : "RSA-OAEP-256",
       "userinfoResponseFormat" : "JSON",
+      "mTLSTrustedCert" : null,
+      "jwksCacheTimeout" : 3600000,
       "userinfoSignedResponseAlg" : null,
       "requestParameterEncryptedAlg" : "RSA-OAEP-256",
       "tokenEndpointAuthSigningAlgorithm" : "PS256",
-      "requestParameterEncryptedEncryptionAlgorithm" : "A128CBC-HS256",
-      "idTokenSignedResponseAlg" : "PS256",
+      "mTLSSubjectDN" : null,
       "idTokenEncryptionEnabled" : false,
       "userinfoEncryptedResponseEncryptionAlgorithm" : null,
       "publicKeyLocation" : "jwks_uri",
-      "userinfoEncryptedResponseAlg" : null,
+      "mTLSCertificateBoundAccessTokens" : false,
+      "requestParameterEncryptedEncryptionAlgorithm" : "A128CBC-HS256",
+      "jwkStoreCacheMissCacheTime" : 60000,
+      "idTokenSignedResponseAlg" : "PS256",
+      "idTokenPublicEncryptionKey" : null,
       "jwksUri" : "https://service.directory.ob.forgerock.financial:443/api/software-statement/5ce7b187dc9578001764dfc6/application/jwk_uri",
+      "userinfoEncryptedResponseAlg" : null,
       "requestParameterSignedAlg" : "PS256",
-      "mTLSCertificateBoundAccessTokens" : false
+      "clientJwtPublicKey" : null
     },
     "advancedOAuth2ClientConfig" : {
       "grantTypes" : [ "refresh_token", "client_credentials", "authorization_code" ],
       "updateAccessToken" : "_TsOR3WDcGfYrdxalM20ZNJGswM",
+      "requestUris" : [ ],
+      "clientUri" : [ ],
+      "mixUpMitigation" : false,
+      "logoUri" : [ ],
+      "tokenEndpointAuthMethod" : "private_key_jwt",
+      "sectorIdentifierUri" : null,
+      "isConsentImplied" : false,
+      "contacts" : [ ],
       "responseTypes" : [ "code id_token" ],
+      "policyUri" : [ ],
+      "descriptions" : [ ],
       "subjectType" : "public",
-      "tokenEndpointAuthMethod" : "private_key_jwt"
-    },
-    "coreOAuth2ClientConfig" : {
-      "clientType" : "Confidential",
-      "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQ1tu5OZBPMgue4NXuFY3Uf4gmMP4H4nG0abxn7qcBDbtS+NoAJMjIKLMFcTv/q2NniL7zjr8a0HoO0tU1iq+kdi2QBVSXCZUiZxYWZTOjTM2cWrE4SaJLJ2btRI0dywIsPihe0k+fl6TCrf9Kgj99+A==",
-      "scopes" : [ "openid", "payments", "accounts" ],
-      "authorizationCodeLifetime" : 0,
-      "accessTokenLifetime" : 0,
-      "refreshTokenLifetime" : 0,
-      "defaultScopes" : [ ],
-      "redirectionUris" : [ "https://www.google.com" ],
-      "status" : "Active"
+      "name" : [ ]
     },
     "coreOpenIDClientConfig" : {
       "jwtTokenLifetime" : 0,
+      "clientSessionUri" : null,
+      "postLogoutRedirectUri" : [ ],
+      "defaultMaxAge" : 1,
+      "claims" : [ ],
       "defaultAcrValues" : [ ],
-      "defaultMaxAgeEnabled" : false,
-      "defaultMaxAge" : 1
+      "defaultMaxAgeEnabled" : false
+    },
+    "coreOAuth2ClientConfig" : {
+      "userpassword" : null,
+      "userpassword-encrypted" : "AAAAA0FFUwIQyeFUGtaO0o9oyu2YZVJ3aZL7z7KFietAIH8f1NWcc61UObQFtmzwO7bPUDJZoIniAJ6AI0ljvMG9xxn24i4YToh11r+/i46278AAP6cbLpc8SV4w0vt8jVlEWNFx5TffgTiabszZzo+CkwiEHJhH+Q==",
+      "authorizationCodeLifetime" : 0,
+      "accessTokenLifetime" : 0,
+      "defaultScopes" : [ ],
+      "clientName" : [ ],
+      "clientType" : "Confidential",
+      "scopes" : [ "openid", "payments", "accounts" ],
+      "agentgroup" : null,
+      "refreshTokenLifetime" : 0,
+      "redirectionUris" : [ "https://www.google.com" ],
+      "status" : "Active"
+    },
+    "coreUmaClientConfig" : {
+      "claimsRedirectionUris" : [ ]
     },
     "_type" : {
       "_id" : "OAuth2Client",

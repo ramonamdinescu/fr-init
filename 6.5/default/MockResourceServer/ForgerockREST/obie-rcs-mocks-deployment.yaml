@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: obie-rcs-mocks
-  namespace: psd2acceldemo
+  namespace: iss-forgerock
   labels:
     app: obie-rcs-mocks
 spec:
@@ -27,7 +27,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: obie-rcs-mocks
-  namespace: psd2acceldemo
+  namespace: iss-forgerock
   labels:
     app: obie-rcs-mocks
 spec:

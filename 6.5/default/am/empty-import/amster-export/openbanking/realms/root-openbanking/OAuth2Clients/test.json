@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.1",
+    "amsterVersion" : "6.5.2",
     "entityType" : "OAuth2Clients",
     "entityId" : "test",
     "pathParams" : { }
@@ -60,13 +60,14 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQ2OydAM+kGXQsc5WInVJwdVuFoDqIdXLg4ONQjCZToi5qeZejcykfGQ==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQqXhwkkV69gRWrdSggDvpVLnNcmt3J/N9X6DB5ofB9qpN1pV5EKJVhg==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
       "defaultScopes" : [ "openid" ],
       "clientName" : [ ],
       "clientType" : "Public",
       "scopes" : [ "openid" ],
+      "agentgroup" : null,
       "refreshTokenLifetime" : 0,
       "redirectionUris" : [ "https://www.google.com" ],
       "status" : "Active"
