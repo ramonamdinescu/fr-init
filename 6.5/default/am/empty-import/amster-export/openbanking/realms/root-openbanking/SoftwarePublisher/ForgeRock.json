@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "SoftwarePublisher",
     "entityId" : "ForgeRock",
     "pathParams" : { }
@@ -17,7 +17,7 @@
     "agentgroup" : null,
     "issuer" : "ForgeRock",
     "userpassword" : null,
-    "userpassword-encrypted" : "AAAAA0FFUwIQ8pXcUg6JxaRDkXXd2KyYaP19vQWuzI634xrKCkMulyXfdRHTn0pUWPL5fj4h+6eBPxnzYwU9/+fFaeHmYMHlMGT6DDByFdDXixxxgSJTIargAAgDbgN71AHuHbB39Z5y6lHxNSJaxcREAmSEKVt/yrlJAykbjrxxqw1w4827pGp6QrML8d1uyxCtL/V4USLb5qphdW3tUhM=",
+    "userpassword-encrypted" : "AAAAA0FFUwIQlETl1AwtyCL9zZRtTKlISUPZRdTJ0f8qi7QfYSS26hFmMCU7VWYCEQ==",
     "_type" : {
       "_id" : "SoftwarePublisher",
       "name" : "OAuth2 Software Publisher",

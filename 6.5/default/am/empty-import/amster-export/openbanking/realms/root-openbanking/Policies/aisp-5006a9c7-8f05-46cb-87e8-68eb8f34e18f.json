@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "Policies",
     "entityId" : "aisp-5006a9c7-8f05-46cb-87e8-68eb8f34e18f",
     "pathParams" : { }
@@ -66,9 +66,9 @@
       "propertyName" : "grantedAccounts",
       "propertyValues" : [ "22289", "31820" ]
     } ],
-    "lastModifiedBy" : "id=amadmin,ou=user,ou=am-config",
-    "lastModifiedDate" : "2019-10-30T08:19:18.362Z",
-    "createdBy" : "id=amadmin,ou=user,ou=am-config",
-    "creationDate" : "2019-10-30T08:19:18.362Z"
+    "lastModifiedBy" : "id=amAdmin,ou=user,ou=am-config",
+    "lastModifiedDate" : "2019-06-26T09:48:54.248Z",
+    "createdBy" : "id=amAdmin,ou=user,ou=am-config",
+    "creationDate" : "2019-06-26T09:48:54.248Z"
   }
 }

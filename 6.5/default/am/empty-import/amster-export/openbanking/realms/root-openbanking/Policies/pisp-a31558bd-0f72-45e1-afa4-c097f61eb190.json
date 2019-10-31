@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "Policies",
     "entityId" : "pisp-a31558bd-0f72-45e1-afa4-c097f61eb190",
     "pathParams" : { }
@@ -41,9 +41,9 @@
       } ]
     },
     "resourceTypeUuid" : "76656a38-5f8e-401b-83aa-4ccb74ce88d2",
-    "lastModifiedBy" : "id=amadmin,ou=user,ou=am-config",
-    "lastModifiedDate" : "2019-10-30T08:19:18.480Z",
-    "createdBy" : "id=amadmin,ou=user,ou=am-config",
-    "creationDate" : "2019-10-30T08:19:18.480Z"
+    "lastModifiedBy" : "id=amAdmin,ou=user,ou=am-config",
+    "lastModifiedDate" : "2019-06-28T15:03:33.871Z",
+    "createdBy" : "id=amAdmin,ou=user,ou=am-config",
+    "creationDate" : "2019-06-28T15:03:33.871Z"
   }
 }

@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "RemoteConsentAgent",
     "entityId" : "forgerock-rcs",
     "pathParams" : { }
@@ -15,13 +15,13 @@
     "jwkSet" : null,
     "remoteConsentResponseSigningAlg" : "RS256",
     "requestTimeLimit" : 0,
-    "agentgroup" : null,
     "jwksUri" : "https://obie-rcs-backend.iss-forgerock.iss.eu/api/rcs/consent/jwk_pub",
+    "agentgroup" : null,
     "remoteConsentRequestEncryptionAlgorithm" : "RSA-OAEP-256",
     "userpassword" : null,
-    "userpassword-encrypted" : "AAAAA0FFUwIQXf9Izdh64Gea2gazbbQFnoowJfjndr1IFbPkIjUFRmwMixIhvtPA0A==",
-    "remoteConsentRedirectUrl" : "https://obie-rcs-frontend.iss-forgerock.iss.eu/",
+    "userpassword-encrypted" : "AAAAA0FFUwIQntUHYyZI/SPpfHtm+RjavRlsmcZ/H9H5ozIVzzuiqwi5DLTWVYpcLg==",
     "jwksCacheTimeout" : 0,
+    "remoteConsentRedirectUrl" : "https://obie-rcs-frontend.iss-forgerock.iss.eu/",
     "publicKeyLocation" : "jwks_uri",
     "remoteConsentRequestSigningAlgorithm" : "RS256",
     "remoteConsentRequestEncryptionEnabled" : false,

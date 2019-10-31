@@ -1,14 +1,13 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "BaseUrlSource",
     "entityId" : "BaseUrlSource",
     "pathParams" : { }
   },
   "data" : {
     "_id" : "",
-    "contextPath" : "",
     "fixedValue" : "https://openig.iss-forgerock.iss.eu",
     "source" : "FIXED_VALUE",
     "extensionClassName" : "org.forgerock.openam.services.baseurl.BaseURLProvider",

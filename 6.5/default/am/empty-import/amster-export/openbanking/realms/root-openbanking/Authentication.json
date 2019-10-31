@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "Authentication",
     "entityId" : "Authentication",
     "pathParams" : { }
@@ -34,14 +34,14 @@
       "moduleBasedAuthEnabled" : true,
       "zeroPageLoginAllowedWithoutReferrer" : true,
       "sharedSecret" : null,
-      "sharedSecret-encrypted" : "AAAAA0FFUwIQuOQElkJ/dIq5neqqHHW+adFoqWpNY1+p4JiixvqoD5T1KQMo735dtbLWEH7GrwUEIg6aPg8Jlv+8Hxex1oZFITbPoLyEXZWh",
+      "sharedSecret-encrypted" : "AAAAA0FFUwIQUQRHYy5GEbpuSIHlUjqAu0GgUriWR0Isu2UA+Se03QXIDy22qA7GdrMEC4I1ke8T2Hm+Urn5yTQwOslMa4lvcO7vh3eaPjD/",
       "keyAlias" : "test",
       "zeroPageLoginEnabled" : false,
       "zeroPageLoginReferrerWhiteList" : [ ]
     },
     "postauthprocess" : {
       "usernameGeneratorClass" : "com.sun.identity.authentication.spi.DefaultUserIDGenerator",
-      "loginFailureUrl" : [ ],
+      "loginFailureUrl" : [ "" ],
       "userAttributeSessionMapping" : [ ],
       "loginPostProcessClass" : [ ],
       "usernameGeneratorEnabled" : true,

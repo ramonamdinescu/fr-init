@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "HOTPGenerator",
     "entityId" : "e7bc9e71-605f-4f2a-ac10-97b16c9d01fd",
     "pathParams" : { }

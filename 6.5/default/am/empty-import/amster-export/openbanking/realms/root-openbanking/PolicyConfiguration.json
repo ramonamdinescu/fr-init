@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "PolicyConfiguration",
     "entityId" : "PolicyConfiguration",
     "pathParams" : { }
@@ -21,12 +21,11 @@
     "sslEnabled" : false,
     "usersBaseDn" : "ou=identities",
     "bindPassword" : null,
-    "bindPassword-encrypted" : "AAAAA0FFUwIQHFWCZ4zK78n9+wapndJczMYRuwup5CsXYY9zyc9ISXKA3J50jmyfhg==",
+    "bindPassword-encrypted" : "AAAAA0FFUwIQ7JKVIVplSIHiY6AYB0D3YpCWqB5aWOJ6GLKIOjk7Xf1poNtzQKyCUA==",
     "connectionPoolMaximumSize" : 10,
     "policyHeartbeatTimeUnit" : "SECONDS",
-    "maximumSearchResults" : 100,
     "realmSearchFilter" : "(objectclass=sunismanagedorganization)",
-    "checkIfResourceTypeExists" : true,
+    "maximumSearchResults" : 100,
     "_type" : {
       "_id" : "policyconfiguration",
       "name" : "Policy Configuration",

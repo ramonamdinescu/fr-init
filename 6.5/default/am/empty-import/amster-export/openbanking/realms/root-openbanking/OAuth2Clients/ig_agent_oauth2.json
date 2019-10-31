@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "OAuth2Clients",
     "entityId" : "ig_agent_oauth2",
     "pathParams" : { }
@@ -60,14 +60,13 @@
     },
     "coreOAuth2ClientConfig" : {
       "userpassword" : null,
-      "userpassword-encrypted" : "AAAAA0FFUwIQGZQr8GG2P1jNKVvbCdXcPp8AZjPUjJEobqGNOUTANKVLygJ6ZPf1DQ==",
+      "userpassword-encrypted" : "AAAAA0FFUwIQFTetoQS/U5wHWDKczvb+ygd73JdkRFWdN2FtyjbE2nP1bxpeNEGzow==",
       "authorizationCodeLifetime" : 0,
       "accessTokenLifetime" : 0,
       "defaultScopes" : [ "payments" ],
       "clientName" : [ ],
       "clientType" : "Confidential",
       "scopes" : [ "payments", "am-introspect-all-tokens" ],
-      "agentgroup" : null,
       "refreshTokenLifetime" : 0,
       "redirectionUris" : [ "https://www.google.com" ],
       "status" : "Active"

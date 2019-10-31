@@ -1,7 +1,7 @@
 {
   "metadata" : {
     "realm" : "/openbanking",
-    "amsterVersion" : "6.5.2",
+    "amsterVersion" : "6.5.1",
     "entityType" : "Scripts",
     "entityId" : "01e1a3c0-038b-4c16-956a-6c9d89328cff",
     "pathParams" : { }
@@ -14,9 +14,9 @@
     "default" : true,
     "language" : "JAVASCRIPT",
     "context" : "AUTHENTICATION_TREE_DECISION_NODE",
-    "createdBy" : "null",
-    "creationDate" : 0,
-    "lastModifiedBy" : "null",
-    "lastModifiedDate" : 0
+    "createdBy" : "id=dsameuser,ou=user,dc=openam,dc=forgerock,dc=org",
+    "creationDate" : 1433147666269,
+    "lastModifiedBy" : "id=dsameuser,ou=user,dc=openam,dc=forgerock,dc=org",
+    "lastModifiedDate" : 1433147666269
   }
 }
