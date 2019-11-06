@@ -52,7 +52,7 @@
     "com.sun.identity.policy.Policy.policy_evaluation_weights" : "10:10:10",
     "com.iplanet.am.session.client.polling.period" : "180",
     "openam.auth.session_property_upgrader" : "org.forgerock.openam.authentication.service.DefaultSessionPropertyUpgrader",
-    "com.sun.identity.authentication.super.user" : "uid=amAdmin,ou=People,%ROOT_SUFFIX%",
+    
     "com.sun.identity.saml.xmlsig.keyprovider.class" : "@XMLSIG_KEY_PROVIDER@",
     "org.forgerock.openam.timerpool.shutdown.retry.interval" : "15000",
     "com.sun.identity.plugin.monitoring.saml1.class" : "@MONSAML1_PROVIDER_CLASS@",
