@@ -11,6 +11,6 @@
     "parentPath" : "/",
     "active" : true,
     "name" : "openbanking",
-    "aliases" : [ "openig.dev.fr-abc.org", "35.204.227.196" ]
+    "aliases" : [ "openig.iss-forgerock.iss.eu", "35.204.227.196" ]
   }
 }

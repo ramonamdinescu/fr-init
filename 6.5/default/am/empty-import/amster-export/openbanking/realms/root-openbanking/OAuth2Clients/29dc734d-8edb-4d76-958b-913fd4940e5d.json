@@ -28,7 +28,7 @@
     "advancedOAuth2ClientConfig" : {
       "grantTypes" : [ "refresh_token", "client_credentials", "authorization_code" ],
       "updateAccessToken" : "bBUS3R2QLRsP0v1aPAuDPvZizcs",
-      "sectorIdentifierUri" : "login.dev.fr-abc.org",
+      "sectorIdentifierUri" : "login.iss-forgerock.iss.eu",
       "isConsentImplied" : false,
       "contacts" : [ ],
       "requestUris" : [ ],

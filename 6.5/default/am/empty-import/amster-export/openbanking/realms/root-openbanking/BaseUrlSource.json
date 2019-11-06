@@ -8,7 +8,7 @@
   },
   "data" : {
     "_id" : "",
-    "fixedValue" : "https://openig.dev.fr-abc.org",
+    "fixedValue" : "https://openig.iss-forgerock.iss.eu",
     "source" : "FIXED_VALUE",
     "extensionClassName" : "org.forgerock.openam.services.baseurl.BaseURLProvider",
     "_type" : {
