@@ -9,7 +9,7 @@
   "data" : {
     "_id" : "site1",
     "id" : "02",
-    "url" : "https://login.iss-forgerock.iss.eu/",
+    "url" : "https://login.dev.fr-abc.org/",
     "secondaryURLs" : [ ]
   }
 }

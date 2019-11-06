@@ -11,6 +11,6 @@
     "parentPath" : null,
     "active" : true,
     "name" : "/",
-    "aliases" : [ "am-config", "openam", "login.iss-forgerock.iss.eu" ]
+    "aliases" : [ "am-config", "openam", "login.dev.fr-abc.org" ]
   }
 }
