@@ -68,7 +68,7 @@
         <!-- These remain empty unless the corresponding profile is active -->
         <profile.swagger />
         <profile.tls />
-        <com.nimbusds.version>6.7</com.nimbusds.version>
+        <com.nimbusds.version>7.9</com.nimbusds.version>
         <uk.org.openbanking.version>1.1.0.2</uk.org.openbanking.version>
         <org.projectlombok.version>1.16.12</org.projectlombok.version>
         <openbanking-sdk.version>3.0.0.20</openbanking-sdk.version>
