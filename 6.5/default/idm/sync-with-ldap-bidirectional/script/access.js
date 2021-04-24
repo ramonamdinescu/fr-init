@@ -23,7 +23,7 @@
 // own entry in the config.
 
 /*jslint vars:true*/
-/*  
+/*  */
 
 var httpAccessConfig =
 {
