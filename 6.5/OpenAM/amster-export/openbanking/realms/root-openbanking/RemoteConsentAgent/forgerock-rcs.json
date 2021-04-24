@@ -1,0 +1,34 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "RemoteConsentAgent",
+    "entityId" : "forgerock-rcs",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "forgerock-rcs",
+    "remoteConsentResponseEncryptionAlgorithm" : "RSA-OAEP-256",
+    "jwkStoreCacheMissCacheTime" : 0,
+    "remoteConsentRequestEncryptionMethod" : "A128GCM",
+    "remoteConsentResponseEncryptionMethod" : "A128GCM",
+    "jwkSet" : null,
+    "remoteConsentResponseSigningAlg" : "RS256",
+    "requestTimeLimit" : 0,
+    "jwksUri" : "https://obie-rcs-backend.psd2acceldemo.fridam.aeet-forgerock.com/api/rcs/consent/jwk_pub",
+    "agentgroup" : null,
+    "remoteConsentRequestEncryptionAlgorithm" : "RSA-OAEP-256",
+    "userpassword" : null,
+    "userpassword-encrypted" : "AAAAA0FFUwIQntUHYyZI/SPpfHtm+RjavRlsmcZ/H9H5ozIVzzuiqwi5DLTWVYpcLg==",
+    "jwksCacheTimeout" : 0,
+    "remoteConsentRedirectUrl" : "https://obie-rcs-frontend.psd2acceldemo.fridam.aeet-forgerock.com/",
+    "publicKeyLocation" : "jwks_uri",
+    "remoteConsentRequestSigningAlgorithm" : "RS256",
+    "remoteConsentRequestEncryptionEnabled" : false,
+    "_type" : {
+      "_id" : "RemoteConsentAgent",
+      "name" : "OAuth2 Remote Consent Service",
+      "collection" : true
+    }
+  }
+}

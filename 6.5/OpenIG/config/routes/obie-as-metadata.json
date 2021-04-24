@@ -1,0 +1,97 @@
+{
+  "_copyright" : "Copyright 2019 ForgeRock AS Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the\nLicense at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTI\nES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions andlimitations under the License.",
+  "name" : "OBIE OpenAM Metadata",
+  "baseURI" : "https://login.psd2acceldemo.fridam.aeet-forgerock.com",
+  "condition" : "${matches(request.uri.path, '/.well-known/openid-configuration')}",
+  "auditService" : {
+    "name" : "obie-audit-service",
+    "type" : "AuditService",
+    "config" : {
+      "enabled" : true,
+      "event-handlers" : [ {
+        "class" : "org.forgerock.audit.handlers.json.JsonAuditEventHandler",
+        "config" : {
+          "name" : "obie-as-metadata",
+          "logDirectory" : "${openig.baseDirectory.path}/audit/obie",
+          "elasticsearchCompatible" : true,
+          "topics" : [ "access" ],
+          "buffering" : {
+            "enabled" : false,
+            "maxSize" : 10000,
+            "writeInterval" : "250 millis",
+            "maxBatchedEvents" : 500
+          },
+          "fileRotation" : {
+            "rotationEnabled" : true,
+            "rotationInterval" : "24 h",
+            "rotationFileSuffix" : "_yyyy-MM-dd",
+            "rotationTimes" : [ "1 m" ]
+          },
+          "fileRetention" : {
+            "maxNumberOfHistoryFiles" : 365
+          },
+          "rotationRetentionCheckInterval" : "1 m"
+        }
+      } ]
+    }
+  },
+  "handler" : {
+    "type" : "Chain",
+    "config" : {
+      "filters" : [ {
+        "name" : "HeaderFilter-AddResponseHeaders",
+        "type" : "HeaderFilter",
+        "config" : {
+          "messageType" : "RESPONSE",
+          "remove" : [ "Content-Type" ],
+          "add" : {
+            "Content-Type" : [ "application/json" ]
+          }
+        }
+      }, {
+        "name" : "ReplaceHostnamesASDiscoveryFilter",
+        "type" : "SwitchFilter",
+        "config" : {
+          "onResponse" : [ {
+            "condition" : "${response.status.code == 200}",
+            "handler" : {
+              "name" : "ReplaceHostnamesASDiscovery",
+              "type" : "ScriptableHandler",
+              "config" : {
+                "type" : "application/x-groovy",
+                "file" : "ReplaceHostnamesASDiscovery.groovy"
+              }
+            }
+          } ]
+        }
+      }, {
+        "name" : "Set-Response-Location",
+        "type" : "AssignmentFilter",
+        "config" : {
+          "onResponse" : [ {
+            "target" : "${attributes.responseJson}",
+            "value" : "${response.entity}"
+          }, {
+            "target" : "${attributes.amUri}",
+            "value" : "https://login.psd2acceldemo.fridam.aeet-forgerock.com/oauth2/realms/root/realms/openbanking"
+          }, {
+            "target" : "${attributes.igUri}",
+            "value" : "https://openig.psd2acceldemo.fridam.aeet-forgerock.com/oauth2/realms/root/realms/openbanking"
+          } ]
+        }
+      }, {
+        "name" : "HeaderFilter-Rewrite-Host",
+        "type" : "HeaderFilter",
+        "config" : {
+          "messageType" : "REQUEST",
+          "remove" : [ "host", "x-forwarded-host" ],
+          "add" : {
+            "host" : [ "login.psd2acceldemo.fridam.aeet-forgerock.com" ],
+            "x-forwarded-host" : [ "login.psd2acceldemo.fridam.aeet-forgerock.com" ]
+          }
+        }
+      } ],
+      "handler" : "ReverseProxyHandler"
+    }
+  }
+}

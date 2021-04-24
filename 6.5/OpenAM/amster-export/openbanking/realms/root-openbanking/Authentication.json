@@ -1,0 +1,65 @@
+{
+  "metadata" : {
+    "realm" : "/openbanking",
+    "amsterVersion" : "6.5.1",
+    "entityType" : "Authentication",
+    "entityId" : "Authentication",
+    "pathParams" : { }
+  },
+  "data" : {
+    "_id" : "",
+    "accountlockout" : {
+      "lockoutDuration" : 0,
+      "loginFailureLockoutMode" : false,
+      "lockoutDurationMultiplier" : 1,
+      "lockoutWarnUserCount" : 0,
+      "loginFailureCount" : 5,
+      "loginFailureDuration" : 300,
+      "storeInvalidAttemptsInDataStore" : true
+    },
+    "general" : {
+      "locale" : "en_US",
+      "statelessSessionsEnabled" : false,
+      "userStatusCallbackPlugins" : [ ],
+      "identityType" : [ "agent", "user" ],
+      "defaultAuthLevel" : 0,
+      "twoFactorRequired" : false
+    },
+    "userprofile" : {
+      "defaultRole" : [ ],
+      "aliasAttributeName" : [ "uid" ],
+      "dynamicProfileCreation" : "false"
+    },
+    "security" : {
+      "moduleBasedAuthEnabled" : true,
+      "zeroPageLoginAllowedWithoutReferrer" : true,
+      "sharedSecret" : null,
+      "sharedSecret-encrypted" : "AAAAA0FFUwIQUQRHYy5GEbpuSIHlUjqAu0GgUriWR0Isu2UA+Se03QXIDy22qA7GdrMEC4I1ke8T2Hm+Urn5yTQwOslMa4lvcO7vh3eaPjD/",
+      "keyAlias" : "test",
+      "zeroPageLoginEnabled" : false,
+      "zeroPageLoginReferrerWhiteList" : [ ]
+    },
+    "postauthprocess" : {
+      "usernameGeneratorClass" : "com.sun.identity.authentication.spi.DefaultUserIDGenerator",
+      "loginFailureUrl" : [ "" ],
+      "userAttributeSessionMapping" : [ ],
+      "loginPostProcessClass" : [ ],
+      "usernameGeneratorEnabled" : true,
+      "loginSuccessUrl" : [ "/console" ]
+    },
+    "core" : {
+      "orgConfig" : "ldapService",
+      "adminAuthModule" : "ldapService"
+    },
+    "trees" : {
+      "authenticationSessionsStateManagement" : "JWT",
+      "authenticationSessionsWhitelist" : false,
+      "authenticationSessionsMaxDuration" : 5
+    },
+    "_type" : {
+      "_id" : "EMPTY",
+      "name" : "Core",
+      "collection" : false
+    }
+  }
+}
